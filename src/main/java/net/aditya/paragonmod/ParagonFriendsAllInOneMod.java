@@ -21,7 +21,6 @@ public class ParagonFriendsAllInOneMod implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModBlockItems.registerBlockItems();
 		ModBiomes.registerBiomes();
-		ModEntitySpawns.registerEntities();
 
 
         LOGGER.info("Hello Fabric world!");
