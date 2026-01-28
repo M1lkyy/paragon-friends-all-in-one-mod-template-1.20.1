@@ -9,12 +9,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item CITRINE_ORE = new Item(new FabricItemSettings());
+    public static final Item CITRINE_INGOT = new Item(new FabricItemSettings());
 
     public static void registerItems() {
-        Registry.register(Registries.ITEM, new Identifier("paragonmod", "citrine_ore"), CITRINE_ORE);
+        Registry.register(Registries.ITEM, new Identifier("paragonmod", "citrine_ingot"), CITRINE_INGOT);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            entries.add(CITRINE_ORE);
+            entries.add(CITRINE_INGOT);
         });
     }
 }

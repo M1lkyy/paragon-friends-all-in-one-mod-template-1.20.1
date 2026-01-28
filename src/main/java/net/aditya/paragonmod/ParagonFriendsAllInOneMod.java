@@ -1,6 +1,10 @@
 package net.aditya.paragonmod;
 
+import net.aditya.paragonmod.block.ModBlockItems;
+import net.aditya.paragonmod.block.ModBlocks;
 import net.aditya.paragonmod.item.ModItems;
+import net.aditya.paragonmod.world.biome.ModBiomes;
+import net.aditya.paragonmod.world.gen.ModEntitySpawns;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,7 +18,12 @@ public class ParagonFriendsAllInOneMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerItems();
+		ModBlocks.registerBlocks();
+		ModBlockItems.registerBlockItems();
+		ModBiomes.registerBiomes();
+		ModEntitySpawns.registerEntities();
 
-		LOGGER.info("Hello Fabric world!");
+
+        LOGGER.info("Hello Fabric world!");
 	}
 }

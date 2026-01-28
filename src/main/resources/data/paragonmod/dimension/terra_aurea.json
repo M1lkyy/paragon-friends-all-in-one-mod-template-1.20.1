@@ -1,0 +1,20 @@
+{
+  "type": "paragonmod:terra_aurea",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "paragonmod:terra_aurea",
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:bedrock"
+        },
+        {
+          "height": 64,
+          "block": "minecraft:water"
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}
